@@ -1,0 +1,35 @@
+This application is an answer for Texel assignment by Eder Robins 
+
+To execute the program just run main() function. 
+The main function expects a url list.
+
+for testing the examples in the assignment just run:
+python3 main
+
+Design explanation:
+The program is divided to 3 main classes. 
+1. valid periods list generator - includes interface class and a derived class for using ffmpeg.
+2. single video freeze analyzer - does the valid periods duration and max period calculations in a single passing
+3. videos freeze analyzer - calculate sync.
+Note: url download is part of main because i assumed that its likely that there will also be times user would use it on local disc
+
+Next steps:
+1. ffmpeg list generator optimization - attempt to reduce temporary files by figure out a way to redirect output or connect directly to lib.
+2. for multiple videos run single video analyzer in parallel by running each video in a different thread.
+3. change video analyzer class to a decorator design pattern. it will allow adding easily new features (for example min valid period)
+3. use scatter-gather method to calculate sync.
+4. the code is a POC. moving to production code requires at least error handling and unit test for each module.
+5. add comments in code, i didn't had time for that.
+
+requirements:
+1.linux OS.
+2. ffmpeg.
+3. python 3
+
+
+Conclusions:
+The task was challenging and very interesting. 
+
+
+
+
