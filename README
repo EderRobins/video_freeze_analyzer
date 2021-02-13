@@ -4,7 +4,7 @@ To execute the program just run main() function.
 The main function expects a url list.
 
 for testing the examples in the assignment just run:
-python3 main
+python3 main.py
 
 Design explanation:
 The program is divided to 3 main classes. 
